@@ -17,4 +17,6 @@
         enable it 
     5. Create Credentials: choose the API key, the
     console will generate a long string
-    
+## How to use my code:
+    1. run the code called youtube_catch_main.py to get data.json
+    2. run the generate_wordcloud.py to get the wordcloud
