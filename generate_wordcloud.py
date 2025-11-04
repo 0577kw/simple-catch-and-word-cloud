@@ -27,8 +27,9 @@ def generate_wordcloud():
     plt.figure(figsize=(10, 6))
     plt.imshow(wc, interpolation='bilinear')
     plt.axis("off")
-    plt.title("YouTube 评论词云", fontsize=16)
+    plt.title("YouTube comments wordcloud", fontsize=16)
 
     plt.show()
 generate_wordcloud()
+
 
