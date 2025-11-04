@@ -13,17 +13,17 @@ def generate_wordcloud():
     #word cloud setting and generate
     stop_words = set(['and', 'the', 'to', 'a', 'in','be','but','she','he','we','with','this','would','ever','that','i'])
     wc = WordCloud(
-        font_path="msyh.ttc",  # 微软雅黑字体路径（显示中文）
+        font_path="msyh.ttc", 
         width=1000,
         height=600,
         background_color="white",
         stopwords=stop_words
     )
 
-    # 生成词云
+    # generate the wordcloud
     wc.generate(texts_for_wordcloud)
 
-    # 显示词云
+    # show wordcloud
     plt.figure(figsize=(10, 6))
     plt.imshow(wc, interpolation='bilinear')
     plt.axis("off")
@@ -31,3 +31,4 @@ def generate_wordcloud():
 
     plt.show()
 generate_wordcloud()
+
